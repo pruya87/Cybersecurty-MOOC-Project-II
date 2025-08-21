@@ -30,16 +30,16 @@ Intrusion Detection System (IDS) monitoring highlighted which attacks were detec
 | 1    | VM network / ports | Nmap        | Open ports: FTP, HTTP, SSH, SMB, etc. |
 
 
+Step 0a. Ping sweepd detected
 
 ![Step 0a](assets/ping_detected.png)
 
-Step 0a. Ping sweepd detected
 
 
+Step 0b. Port scan detected
 
 ![Step 0b](assets/detected_scan.png)
 
-Step 0b. Port scan detected
 
 
 
@@ -58,64 +58,71 @@ Step 0b. Port scan detected
 | 7    | FTP brute force  | Hydra           | Dead end      | **Detected** |
 | 8    | SMB Upload payload | MSF           | www-data shell      | **Detected** |
 
+Step 1. PHPMyAdmin Reg undected
 
 ![Step 1](assets/phpmyadmin_reg_undetected.png)
 
-Step 1. PHPMyAdmin Reg undected
 
-
-
-![Step 2](assets/apache_mod_cgi_detected.png)
 
 Step 2. Apache mod CGI detected
 
+![Step 2](assets/apache_mod_cgi_detected.png)
 
 
-![Step 3](assets/proftpd_modcopy_undetected.png)
 
 Step 3. ProFTPd modecopy undetected
 
+![Step 3](assets/proftpd_modcopy_undetected.png)
 
 
-![Step 4a](assets/msfvenom_payload_revshell_posted_undetected.png)
 
 Step 4a. MSFVenom payload reverse shell creation and upload (PUT) undetected
 
 
+![Step 4a](assets/msfvenom_payload_revshell_posted_undetected.png)
 
-![Step 4b](assets/php_bash_undetected.png)
+
 
 Step 4b. PHP bash shell creation and upload (PUT) undetected
 
 
+![Step 4b](assets/php_bash_undetected.png)
 
-![Step 4c](assets/unencrypted_php_rshell_detected.png)
+
 
 Step 4c. PHP unencrypted reverse shell creation and upload (PUT) detected
 
 
+![Step 4c](assets/unencrypted_php_rshell_detected.png)
 
-![Step 4d](assets/id_interactive_reverse_shell_detected.png)
+
 
 Step 4d. nc reverse shell created and converted to interactive undetected
 
 
+![Step 4d](assets/id_interactive_reverse_shell_detected.png)
 
-![Step 6](assets/bruteforce_undetected.png)
+
 
 Step 6. MSF SSH bruteforce undetected
 
 
+![Step 6](assets/bruteforce_undetected.png)
 
-![Step 7](assets/bruteforce_ftp_detected.png)
+
 
 Step 7. Hydra FTP bruteforce detected
 
 
+![Step 7](assets/bruteforce_ftp_detected.png)
+
+
+
+Step 8. SMB exploit PHP reverse shell upload undetected
+
 
 ![Step 8](assets/exploit_smb_php_undetected.png)
 
-Step 8. SMB exploit PHP reverse shell upload undetected
 
 
 
@@ -132,33 +139,36 @@ Step 8. SMB exploit PHP reverse shell upload undetected
 
 ---
 
-![Step 1a](assets/db_enumeration_undetected.png)
-
 Step 1a. DB enumeration undetected
 
+![Step 1a](assets/db_enumeration_undetected.png)
 
 
-![Step 1b](assets/database_dump.png)
 
 Step 1b. DB dump undetected
 
+![Step 1b](assets/database_dump.png)
 
 
-![Step 1c](assets/Extraction_of_db_detected.png)
 
 Step 1c. DB manual extraction detected
 
+![Step 1c](assets/Extraction_of_db_detected.png)
 
+
+
+
+Step 2a. Extraction of secrets detected
 
 ![Step 2a](assets/secret_manual_enumeration_detected.png)
 
-Step 1a. Extraction of secrets detected
 
 
+Step 2b. Exploit enumeration detected
 
 ![Step 2b](assets/exploit_enumeration_detected.png)
 
-Step 2b. Exploit enumeration detected
+
 
 
 
@@ -179,9 +189,12 @@ Step 2b. Exploit enumeration detected
 |------|--------------------------------------|-------------|--------------|
 | 1    | `sudo -u#-1 /bin/bash -p` exploit   | root        | Successful   |
 
-![Step 1](assets/vertical_escalation.png)
 
 Step 1. Vertical escatation
+
+
+![Step 1](assets/vertical_escalation.png)
+
 
 
 
